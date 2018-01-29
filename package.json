@@ -1,0 +1,36 @@
+{
+  "name": "refdatastream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "start": "nodemon --exec babel-node src/index.js",
+    "clean": "prettier --write ./src/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "lodash": "^4.17.4",
+    "luxon": "^0.3.1",
+    "nodemon": "^1.14.11"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-preset-latest-minimal": "^1.1.2",
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2"
+  },
+  "babel": {
+    "presets": [
+      "latest-minimal"
+    ]
+  },
+  "nodemonConfig": {
+    "ignore":["data/*"]
+  }
+}
